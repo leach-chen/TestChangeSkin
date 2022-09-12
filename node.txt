@@ -1,0 +1,4 @@
+设置变色属性：
+1：布局里指定SkinLayoutInflaterFactory中getSkinValueFromAttributeSet包含的属性
+2：通过SkinValueBuilder.acquire()，SkinHelper.setSkinValue设置
+3：类实现IQMUISkinDefaultAttrProvider，并在其中返回对应添加的属性sDefaultSkinAttrs.put(QMUISkinValueBuilder.BACKGROUND, R.attr.qmui_skin_support_round_btn_bg_color);

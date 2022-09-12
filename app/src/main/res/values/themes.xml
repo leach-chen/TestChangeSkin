@@ -13,4 +13,31 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+
+    <!-- skin attr define-->
+    <attr name="app_skin_common_background" format="color|reference" />
+    <attr name="app_skin_common_title_text_color" format="color|reference" />
+
+    <style name="AppTheme" parent="UI.Compat.NoActionBar">
+        <item name="skin_support_activity_background">?attr/app_skin_common_background</item>
+        <item name="app_skin_common_background">@color/ui_config_color_white</item>
+        <item name="app_skin_common_title_text_color">?attr/ui_config_color_gray_1</item>
+    </style>
+
+    <!-- blue skin -->
+    <style name="app_skin_blue" parent="AppTheme" />
+
+    <!-- dark skin -->
+    <style name="app_skin_dark" parent="AppTheme">
+        <item name="app_skin_common_background">@color/ui_config_color_gray_2</item>
+        <item name="app_skin_common_title_text_color">@color/ui_config_color_75_white</item>
+    </style>
+
+    <!-- white skin -->
+    <style name="app_skin_white" parent="AppTheme">
+        <item name="app_skin_common_background">@color/ui_config_color_blue</item>
+        <item name="app_skin_common_title_text_color">@color/ui_config_color_75_white</item>
+    </style>
+
 </resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppRootTheme" parent="Theme.AppCompat.DayNight" />
+
+    <style name="AppBaseTheme" parent="AppRootTheme">
+
+    </style>
+
+    <style name="AppConfigTheme" parent="AppBaseTheme">
+        <item name="android:windowBackground">?attr/skin_support_activity_background</item>
+    </style>
+
+    <style name="UI" parent="AppConfigTheme">
+        <item name="skin_support_activity_background">@color/ui_config_color_white</item>
+        <item name="ui_config_color_gray_1">@color/ui_config_color_gray_1</item>
+    </style>
+
+    <style name="UI.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="UI.Compat.NoActionBar" parent="UI.NoActionBar" />
+</resources>

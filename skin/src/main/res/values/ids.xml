@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="skin_value" type="id" />
+    <item name="skin_current" type="id"/>
+    <item name="skin_apply_listener" type="id" />
+    <item name="skin_default_attr_provider" type="id" />
+
+    <item name="skin_intercept_dispatch" type="id" />
+    <item name="skin_ignore_apply" type="id" />
+
+    <item name="view_offset_helper" type="id"/>
+</resources>

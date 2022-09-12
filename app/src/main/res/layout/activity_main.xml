@@ -4,15 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    app:skin_background="?attr/app_skin_common_background"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:skin_text_color="?attr/app_skin_common_title_text_color" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Hello World!"
+        app:layout_constraintLeft_toLeftOf="@+id/tv1"
+        app:layout_constraintRight_toRightOf="@+id/tv1"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="btnClick1"
+        android:text="主题1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></Button>
+
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="btnClick2"
+        android:text="主题2"
+        app:layout_constraintLeft_toLeftOf="@+id/btn1"
+        app:layout_constraintRight_toRightOf="@+id/btn1"
+        app:layout_constraintTop_toBottomOf="@+id/btn1"></Button>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="btnClick3"
+        android:text="主题3"
+        app:layout_constraintLeft_toLeftOf="@+id/btn2"
+        app:layout_constraintRight_toRightOf="@+id/btn2"
+        app:layout_constraintTop_toBottomOf="@+id/btn2"></Button>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
